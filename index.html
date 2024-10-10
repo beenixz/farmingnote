@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARMING NOTE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FARMING NOTE</h1>
+    </header>
+    <main>
+        <section id="recommendation">
+            <h2>농산물 추천</h2>
+            <form id="form">
+                <label for="region">지역:</label>
+                <select id="region">
+                    <option value="서울">서울</option>
+                    <option value="부산">부산</option>
+                    <option value="대전">대전</option>
+                    <option value="광주">광주</option>
+                </select>
+                <label for="temperature">온도 (°C):</label>
+                <input type="number" id="temperature" required>
+                <button type="submit">추천받기</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 천안월봉고등학교 인포테라피 </p>
+        <nav>
+            <a href="#">개인정보 처리방침</a> | 
+            <a href="#">이용약관</a> |
+            <a href="#">문의하기</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
