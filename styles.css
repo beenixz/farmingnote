@@ -1,6 +1,5 @@
 * {
-    box-sizing: border-box; /* 모든 요소의 박스 모델을 border-box로 설정 */
-}
+    box-sizing: border-box;
 
 html, body {
     margin: 0;
