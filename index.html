@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FARMING NOTE</title>
+    <title>파밍노트 FARMING NOTE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>FARMING NOTE</h1>
+        <div class="logo">FARMING NOTE</div>
+        <nav class="toolbar">
+            <a href="#">홈</a>
+            <a href="#">추천</a>
+            <a href="#">정보</a>
+            <a href="#">커뮤니티</a>
+            <a href="#">문의하기</a>
+            <a href="#">블로그</a>
+            <a href="#">사용자 계정</a>
+            <a href="#">피드백</a>
+        </nav>
     </header>
     <main>
         <section id="recommendation">
@@ -22,6 +30,19 @@
                     <option value="부산">부산</option>
                     <option value="대전">대전</option>
                     <option value="광주">광주</option>
+                    <option value="인천">인천</option>
+                    <option value="대구">대구</option>
+                    <option value="울산">울산</option>
+                    <option value="세종">세종</option>
+                    <option value="경기">경기</option>
+                    <option value="강원">강원</option>
+                    <option value="충북">충북</option>
+                    <option value="충남">충남</option>
+                    <option value="전북">전북</option>
+                    <option value="전남">전남</option>
+                    <option value="경북">경북</option>
+                    <option value="경남">경남</option>
+                    <option value="제주">제주</option>
                 </select>
                 <label for="temperature">온도 (°C):</label>
                 <input type="number" id="temperature" required>
@@ -31,7 +52,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 천안월봉고등학교 인포테라피 </p>
+        <p>&copy; 2024 천안월봉고 인포테라피</p>
         <nav>
             <a href="#">개인정보 처리방침</a> | 
             <a href="#">이용약관</a> |
