@@ -23,3 +23,17 @@ document.getElementById('form').addEventListener('submit', function(event) {
         </ul>
     `;
 });
+
+document.getElementById('province').addEventListener('input', function() {
+    const cityLabel = document.getElementById('city-label');
+    const citySelect = document.getElementById('city');
+
+    if (this.value.trim() !== '') {
+        cityLabel.style.display = 'block'; // 시도 레이블 보이기
+        citySelect.style.display = 'block'; // 시도 선택 박스 보이기
+    } else {
+        cityLabel.style.display = 'none'; // 시도 레이블 숨기기
+        citySelect.style.display = 'none'; // 시도 선택 박스 숨기기
+    }
+});
+
