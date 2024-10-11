@@ -1,8 +1,12 @@
+* {
+    box-sizing: border-box; /* 모든 요소의 박스 모델을 border-box로 설정 */
+}
+
 html, body {
-    width: 1920px;
-    height: 1080px;
     margin: 0;
     padding: 0;
+    width: 100%; /* 전체 너비 */
+    height: 100%; /* 전체 높이 */
     display: flex;
     flex-direction: column;
 }
@@ -52,10 +56,11 @@ header {
 
 main {
     flex: 1; /* 메인 영역을 늘리기 위해 flex-grow 사용 */
-    margin-bottom: 20px;
     display: flex;
     justify-content: center; /* 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
+    padding: 20px; /* 여백 추가 */
+    overflow: auto; /* 내용이 넘칠 경우 스크롤 가능 */
 }
 
 form {
@@ -92,32 +97,11 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
 }
 
-#result h3 {
-    margin: 0; /* 기본 마진 제거 */
-    color: #333; /* 제목 색상 */
-}
-
-#result ul {
-    list-style-type: none; /* 기본 불릿 제거 */
-    padding: 0; /* 기본 패딩 제거 */
-}
-
-#result li {
-    background: #e7f3fe; /* 항목 배경색 */
-    margin: 5px 0; /* 항목 간 여백 */
-    padding: 10px; /* 항목 패딩 */
-    border-radius: 4px; /* 항목 모서리 둥글게 */
-    color: #333; /* 항목 글자 색상 */
-}
-
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer nav a {
@@ -128,4 +112,26 @@ footer nav a {
 
 footer nav a:hover {
     text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* 헤더 세로 정렬 */
+        align-items: flex-start; /* 왼쪽 정렬 */
+    }
+
+    .toolbar {
+        flex-direction: row; /* 툴바를 가로로 배치 */
+        flex-wrap: wrap; /* 줄 바꿈 허용 */
+    }
+
+    .toolbar a {
+        margin-bottom: 0; /* 세로 정렬 시 여백 제거 */
+        margin-right: 10px; /* 오른쪽 여백 추가 */
+    }
+
+    .header-logo {
+        margin-bottom: 10px; /* 로고와 툴바 간 여백 추가 */
+    }
 }
