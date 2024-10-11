@@ -41,14 +41,13 @@ header {
 
 .toolbar {
     display: flex; /* 툴바를 가로로 배치 */
-    flex-direction: column; /* 세로 정렬 */
     margin-left: 20px; /* 툴바와 로고 간 여백 */
 }
 
 .toolbar a {
     color: white; /* 링크 색상 */
     text-decoration: none; /* 밑줄 제거 */
-    margin-bottom: 10px; /* 링크 간 여백 */
+    margin-right: 20px; /* 링크 간 여백 */
     padding: 10px; /* 클릭 영역 확장 */
 }
 
@@ -124,11 +123,14 @@ footer nav a:hover {
     }
 
     .toolbar {
-        flex-direction: column; /* 세로 정렬 */
+        flex-direction: row; /* 가로 정렬 */
+        flex-wrap: wrap; /* 줄 바꿈 허용 */
+        margin-left: 0; /* 여백 제거 */
     }
 
     .toolbar a {
-        margin-bottom: 10px; /* 링크 간 여백 */
+        margin-bottom: 0; /* 세로 정렬 시 여백 제거 */
+        margin-right: 10px; /* 오른쪽 여백 추가 */
     }
 
     .header-logo {
