@@ -8,51 +8,30 @@
 </head>
 <body>
     <header>
-        <div class="logo">FARMING NOTE</div>
-        <nav class="toolbar">
-            <a href="#">홈</a>
-            <a href="#">추천</a>
-            <a href="#">정보</a>
-            <a href="#">커뮤니티</a>
-            <a href="#">문의하기</a>
-            <a href="#">블로그</a>
-            <a href="#">사용자 계정</a>
-            <a href="#">피드백</a>
-        </nav>
+        <a href="#" class="logo">FARMING NOTE</a>
+        <img src="logo.png" alt="FARMING NOTE 로고" class="header-logo"> <!-- 로고 이미지 추가 -->
+        <nav class="toolbar"></nav> <!-- 툴바를 여기서 동적으로 추가 -->
     </header>
     <main>
         <section id="recommendation">
             <h2>농산물 추천</h2>
             <form id="form">
-                <label for="region">지역:</label>
-                <select id="region">
-                    <option value="서울">서울</option>
-                    <option value="부산">부산</option>
-                    <option value="대전">대전</option>
-                    <option value="광주">광주</option>
-                    <option value="인천">인천</option>
-                    <option value="대구">대구</option>
-                    <option value="울산">울산</option>
-                    <option value="세종">세종</option>
-                    <option value="경기">경기</option>
-                    <option value="강원">강원</option>
-                    <option value="충북">충북</option>
-                    <option value="충남">충남</option>
-                    <option value="전북">전북</option>
-                    <option value="전남">전남</option>
-                    <option value="경북">경북</option>
-                    <option value="경남">경남</option>
-                    <option value="제주">제주</option>
-                </select>
+                <label for="province">도:</label>
+                <input type="text" id="province" placeholder="예: 경기도" required>
+                
+                <label for="city" id="city-label" style="display: none;">시:</label>
+                <select id="city" style="display: none;"></select> <!-- 시 선택란 -->
+                
                 <label for="temperature">온도 (°C):</label>
                 <input type="number" id="temperature" required>
+
                 <button type="submit">추천받기</button>
             </form>
             <div id="result"></div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 천안월봉고 인포테라피</p>
+        <p>&copy; 2024 기후변화 농산물 추천 사이트. 모든 권리 보유.</p>
         <nav>
             <a href="#">개인정보 처리방침</a> | 
             <a href="#">이용약관</a> |
