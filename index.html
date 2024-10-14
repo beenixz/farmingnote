@@ -9,23 +9,22 @@
 <body>
     <header>
         <a href="#" class="logo">FARMING NOTE</a>
-        <img src="logo.png" alt="FARMING NOTE 로고" class="header-logo"> <!-- 로고 이미지 추가 -->
-        <nav class="toolbar"></nav> <!-- 툴바를 여기서 동적으로 추가 -->
+        <img src="farminglogo.png" alt="FARMING NOTE 로고" class="header-logo">
+        <nav class="toolbar"></nav>
     </header>
     <main>
         <section id="recommendation">
             <h2>농산물 추천</h2>
             <form id="form">
-                <label for="province">도:</label>
-                <input type="text" id="province" placeholder="예: 경기도" required>
-                
-                <label for="city" id="city-label" style="display: none;">시:</label>
-                <select id="city" style="display: none;"></select> <!-- 시 선택란 -->
-                
+                <label for="location">도/시:</label>
+                <select id="location" required>
+                    <option value="">- 선택하세요 -</option>
+                </select>
+
                 <label for="temperature">온도 (°C):</label>
                 <input type="number" id="temperature" required>
 
-                <button type="submit">추천받기</button>
+                <button type="submit">추천</button>
             </form>
             <div id="result"></div>
         </section>
