@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* 모든 요소의 박스 모델을 border-box로 설정 */
+}
 
 html, body {
     margin: 0;
@@ -18,6 +19,7 @@ body {
 header {
     display: flex;
     align-items: center; /* 중앙 정렬 */
+    justify-content: space-between; /* 로고와 툴바 간 공간 분배 */
     background-color: #4CAF50; /* 헤더 배경색 */
     color: white; /* 텍스트 색상 */
     padding: 10px 20px; /* 패딩 추가 */
@@ -29,7 +31,6 @@ header {
     font-weight: bold; /* 강조 */
     color: white; /* 링크 색상 */
     text-decoration: none; /* 밑줄 제거 */
-    margin-right: 20px; /* 로고와 툴바 간 여백 */
 }
 
 .header-logo {
@@ -40,7 +41,7 @@ header {
 
 .toolbar {
     display: flex; /* 툴바를 가로로 배치 */
-    margin-left: 20px; /* 툴바와 로고 간 여백 */
+    margin-left: auto; /* 왼쪽 여백 자동으로 설정하여 오른쪽으로 이동 */
 }
 
 .toolbar a {
