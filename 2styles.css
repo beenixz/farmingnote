@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box; /* 모든 요소의 박스 모델을 border-box로 설정 */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* 전체 너비 */
+    height: 100%; /* 전체 높이 */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center; /* 중앙 정렬 */
+    justify-content: space-between; /* 로고와 툴바 간 공간 분배 */
+    background-color: #4CAF50; /* 헤더 배경색 */
+    color: white; /* 텍스트 색상 */
+    padding: 10px 20px; /* 패딩 추가 */
+    border-radius: 5px; /* 모서리 둥글게 */
+}
+
+.logo {
+    font-size: 24px; /* 로고 크기 */
+    font-weight: bold; /* 강조 */
+    color: white; /* 링크 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.header-logo {
+    width: 50px; /* 로고 이미지 크기 */
+    height: 50px; /* 로고 이미지 크기 */
+    margin-right: 20px; /* 이미지와 툴바 간 여백 */
+}
+
+.toolbar {
+    display: flex; /* 툴바를 가로로 배치 */
+    margin-left: auto; /* 왼쪽 여백 자동으로 설정하여 오른쪽으로 이동 */
+}
+
+.toolbar a {
+    color: white; /* 링크 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin-right: 20px; /* 링크 간 여백 */
+    padding: 10px; /* 클릭 영역 확장 */
+}
+
+.toolbar a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
+
+main {
+    flex: 1; /* 메인 영역을 늘리기 위해 flex-grow 사용 */
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 20px; /* 여백 추가 */
+    overflow: auto; /* 내용이 넘칠 경우 스크롤 가능 */
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    background: #fff; /* 배경색 */
+    padding: 15px; /* 패딩 추가 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* 헤더 세로 정렬 */
+        align-items: flex-start; /* 왼쪽 정렬 */
+    }
+
+    .toolbar {
+        flex-direction: row; /* 가로 정렬 */
+        flex-wrap: wrap; /* 줄 바꿈 허용 */
+        margin-left: 0; /* 여백 제거 */
+    }
+
+    .toolbar a {
+        margin-bottom: 0; /* 세로 정렬 시 여백 제거 */
+        margin-right: 10px; /* 오른쪽 여백 추가 */
+    }
+
+    .header-logo {
+        margin-bottom: 10px; /* 로고와 툴바 간 여백 추가 */
+    }
+}
