@@ -1,10 +1,8 @@
 // 툴바의 메뉴 항목
 const toolbarItems = [
     { name: "홈", link: "index.html" },
-    { name: "추천", link: "recommend.html" },
     { name: "커뮤니티", link: "community.html" },
-    { name: "사용자 계정", link: "login.html" },
-    { name: "피드백", link: "feedback.html" },
+    { name: "사용자 계정", link: "login.html" }
 ];
 
 // 툴바에 항목 추가
@@ -136,7 +134,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         const recommendations = produceData.recommendations[location][tempKey];
 
         if (recommendations) {
-            resultDiv.innerHTML = `<h3>${location}에서 추천하는 농산물:</h3><ul>${recommendations.map(prod => `<li>${prod}</li>`).join('')}</ul>`;
+            resultDiv.innerHTML = `<h3>${location}에서 추천하는 농산물</h3><ul>${recommendations.map(prod => `<li>${prod}</li>`).join('')}</ul>`;
         } else {
             resultDiv.innerHTML = `<h3>${location}에서 추천할 농산물이 없습니다.</h3>`;
         }
@@ -144,4 +142,3 @@ document.getElementById('form').addEventListener('submit', function(event) {
         resultDiv.innerHTML = `<h3>모든 필드를 입력해 주세요.</h3>`;
     }
 });
-``
