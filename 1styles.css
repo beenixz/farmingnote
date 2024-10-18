@@ -33,9 +33,9 @@ header {
 }
 
 .header-logo {
-    width: 50px; /* 로고 이미지 크기 */
-    height: 50px; /* 로고 이미지 크기 */
-    margin-right: 20px; /* 이미지와 툴바 간 여백 */
+    width: 43px; /* 로고 이미지 크기 */
+    height: 43px; /* 로고 이미지 크기 */
+    margin-right: 28px; /* 이미지와 툴바 간 여백 */
 }
 
 .toolbar {
