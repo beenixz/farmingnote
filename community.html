@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>파밍노트 | FARMING NOTE</title>
-    <link rel="stylesheet" href="3styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
 
     <main>
         <section id="posts">
-            <h2>Post List</h2>
+            <h2>POST LIST</h2>
             <div id="postList"></div>
         </section>
         <button id="newPostButton" class="add-button">+</button>
@@ -28,6 +28,7 @@
             <form id="postForm">
                 <input type="text" id="postTitle" placeholder="게시글 제목" required>
                 <textarea id="postContent" placeholder="게시글 내용" required></textarea>
+                <input type="file" id="postFile" accept="*/*"> <!-- 첨부파일 추가 -->
                 <button type="submit">게시글 업로드</button>
             </form>
         </div>
