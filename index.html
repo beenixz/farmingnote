@@ -9,34 +9,40 @@
 <body>
     <header>
         <a href="#" class="logo">FARMING NOTE</a>
-        <img src="farminglogo.png" alt="FARMING NOTE 로고" class="header-logo">
+        <img src="logo.png" alt="FARMING NOTE 로고" class="header-logo">
         <nav class="toolbar"></nav>
     </header>
+
     <main>
-        <section id="recommendation">
-            <h2>농산물 추천</h2>
-            <form id="form">
-                <label for="location">도/시:</label>
-                <select id="location" required>
-                    <option value="">- 선택하세요 -</option>
-                </select>
-
-                <label for="temperature">온도 (°C):</label>
-                <input type="number" id="temperature" required>
-
-                <button type="submit">추천</button>
-            </form>
-            <div id="result"></div>
+        <section id="posts">
+            <h2>POST LIST</h2>
+            <div id="postList"></div>
         </section>
+        <button id="newPostButton" class="add-button">+</button>
     </main>
+
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>게시글 작성</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="게시글 제목" required>
+                <textarea id="postContent" placeholder="게시글 내용" required></textarea>
+                <input type="file" id="postFile" accept="*/*"> <!-- 첨부파일 추가 -->
+                <button type="submit">게시글 업로드</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 천안월봉고 인포테라피</p>
         <nav>
-            <a href="#">개인정보 처리방침</a> | 
-            <a href="#">이용약관</a> |
+            <a href="gayin.html">개인정보 처리방침</a> | 
+            <a href="eyong.html">이용약관</a> |
             <a href="https://forms.gle/ZCUqSUb46iQmCV4p9">문의하기</a>
         </nav>
     </footer>
-    <script src="1script.js"></script>
+
+    <script src="community.js"></script>
 </body>
 </html>
