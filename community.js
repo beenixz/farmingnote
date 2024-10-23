@@ -136,6 +136,8 @@ function closeModalFunction() {
 const toolbarItems = [
     { name: "추천", link: "index.html" },
     { name: "커뮤니티", link: "community.html" },
+    { name: "농작물 사전", link: "diy.html" },
+    { name: "농업 기술", link: "tech.html" },
 ];
 
 // 툴바에 항목 추가
