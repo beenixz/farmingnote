@@ -134,9 +134,8 @@ function closeModalFunction() {
 
 // 툴바의 메뉴 항목
 const toolbarItems = [
-    { name: "홈", link: "index.html" },
+    { name: "추천", link: "index.html" },
     { name: "커뮤니티", link: "community.html" },
-    { name: "사용자 계정", link: "login.html" },
 ];
 
 // 툴바에 항목 추가
