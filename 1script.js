@@ -1,8 +1,7 @@
 // 툴바의 메뉴 항목
 const toolbarItems = [
-    { name: "홈", link: "index.html" },
+    { name: "추천", link: "index.html" },
     { name: "커뮤니티", link: "community.html" },
-    { name: "사용자 계정", link: "login.html" }
 ];
 
 // 툴바에 항목 추가
@@ -20,7 +19,7 @@ const produceData = {
         "서울", "부산", "대전", "광주", "인천",
         "대구", "울산", "세종", "경기", "강원",
         "충북", "충남", "전북", "전남", "경북",
-        "경남", "제주"
+        "경남"
     ],
     recommendations: {
         "서울": {
