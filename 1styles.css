@@ -1,68 +1,80 @@
 * {
     box-sizing: border-box; /* 모든 요소의 박스 모델을 border-box로 설정 */
-}
-
-html, body {
+  }
+  
+  html,
+  body {
     margin: 0;
     padding: 0;
     width: 100%; /* 전체 너비 */
     height: 100%; /* 전체 높이 */
     display: flex;
     flex-direction: column;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-}
-
-header {
+    min-height: 100vh; /* 최소 높이를 100vh로 설정하여 전체 화면을 채우도록 */
+  }
+  
+  .main-container {
+    display: flex; /* 메인 컨테이너를 플렉스 박스로 설정 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: flex-start; /* 상단 정렬 */
+    padding: 20px; /* 여백 추가 */
+    flex-grow: 1; /* 메인 콘텐츠가 가능한 공간을 차지하도록 설정 */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px; /* 메인과 푸터 간의 간격 추가 */
+  }
+  
+  header {
     display: flex;
     align-items: center; /* 중앙 정렬 */
     justify-content: space-between; /* 로고와 툴바 간 공간 분배 */
-    background-color: #4CAF50; /* 헤더 배경색 */
+    background-color: #4caf50; /* 헤더 배경색 */
     color: white; /* 텍스트 색상 */
     padding: 10px 20px; /* 패딩 추가 */
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 24px; /* 로고 크기 */
     font-weight: bold; /* 강조 */
     color: white; /* 링크 색상 */
     text-decoration: none; /* 밑줄 제거 */
-}
-
-.header-logo {
+  }
+  
+  .header_logo {
+    position: fixed;
+    transform: translateX(200px);
     width: 43px; /* 로고 이미지 크기 */
     height: 43px; /* 로고 이미지 크기 */
     margin-right: 70px; /* 이미지와 툴바 간 여백 */
-}
-
-.toolbar {
-    display: flex; /* 툴바를 가로로 배치 */
-    margin-left: auto; /* 왼쪽 여백 자동으로 설정하여 오른쪽으로 이동 */
-}
-
-.toolbar a {
-    color: white; /* 링크 색상 */
-    text-decoration: none; /* 밑줄 제거 */
-    margin-right: 20px; /* 링크 간 여백 */
-    padding: 10px; /* 클릭 영역 확장 */
-}
-
-.toolbar a:hover {
-    text-decoration: underline; /* 호버 시 밑줄 추가 */
-}
-
-main {
+  }
+  
+  .main-container {
+    display: flex; /* 메인 컨테이너를 플렉스 박스로 설정 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: flex-start; /* 상단 정렬 */
+    padding: 20px; /* 여백 추가 */
+  }
+  
+  main {
     flex: 1; /* 메인 영역을 늘리기 위해 flex-grow 사용 */
     display: flex;
     justify-content: center; /* 가운데 정렬 */
-    align-items: center; /* 세로 가운데 정렬 */
+    align-items: flex-start; /* 세로 위 정렬 */
     padding: 20px; /* 여백 추가 */
-}
-
-#recommendation {
+    flex-wrap: wrap; /* 줄 바꿈 허용 */
+  }
+  
+  #recommendation {
     background: white; /* 배경색 */
     padding: 20px; /* 패딩 추가 */
     border-radius: 10px; /* 모서리 둥글게 */
@@ -72,34 +84,9 @@ main {
     display: flex;
     flex-direction: column; /* 세로 정렬 */
     gap: 15px; /* 요소 간 간격 설정 */
-}
-
-label {
-    margin-bottom: 5px; /* 레이블과 입력 간 여백 */
-}
-
-input, select, button, textarea {
-    width: 100%; /* 너비를 100%로 설정 */
-    padding: 10px; /* 패딩 추가 */
-    border: 1px solid #ccc; /* 테두리 색상 */
-    border-radius: 5px; /* 모서리 둥글게 */
-}
-
-button {
-    background-color: #4CAF50; /* 초록색 */
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#form button {
-    margin-top: 15px; /* 온도와 버튼 간 간격 추가 */
-}
-
-.result-container {
+  }
+  
+  .result-container {
     margin-top: 20px; /* 입력란과 결과 간의 간격 */
     background: #e7f3fe; /* 배경색 */
     border: 1px solid #b3d4fc; /* 테두리 색상 */
@@ -107,63 +94,98 @@ button:hover {
     padding: 15px; /* 패딩 추가 */
     text-align: left; /* 텍스트 왼쪽 정렬 */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
-}
-
-.result-container h3 {
-    margin: 0 0 10px; /* 제목 여백 설정 */
-    color: #31708f; /* 제목 색상 */
-}
-
-.result-container ul {
-    margin: 0; /* 기본 여백 제거 */
-    padding-left: 20px; /* 왼쪽 패딩 추가 */
-}
-
-.result-container li {
-    margin-bottom: 5px; /* 목록 아이템 간 간격 */
-    color: #3c763d; /* 목록 아이템 색상 */
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-footer nav a {
+  }
+  
+  .detail-container {
+    margin-left: 20px; /* 결과와 간격 설정 */
+    background: white; /* 배경색을 흰색으로 변경 */
+    border: 1px solid #b3d4fc; /* 테두리 색상 변경 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    padding: 15px; /* 패딩 추가 */
+    display: none; /* 기본적으로 숨김 */
+    width: 300px; /* 너비 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  }
+  
+  label {
+    margin-bottom: 5px; /* 레이블과 입력 간 여백 */
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%; /* 너비를 100%로 설정 */
+    padding: 10px; /* 패딩 추가 */
+    border: 1px solid #ccc; /* 테두리 색상 */
+    border-radius: 5px; /* 모서리 둥글게 */
+  }
+  
+  button {
+    background-color: #4caf50; /* 초록색 */
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #form button {
+    margin-top: 15px; /* 온도와 버튼 간 간격 추가 */
+  }
+  
+  footer nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-}
-
-footer nav a:hover {
+  }
+  
+  footer nav a:hover {
     text-decoration: underline;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
     header {
-        flex-direction: column; /* 헤더 세로 정렬 */
-        align-items: flex-start; /* 왼쪽 정렬 */
+      flex-direction: column; /* 헤더 세로 정렬 */
+      align-items: flex-start; /* 왼쪽 정렬 */
     }
-
+  
     .toolbar {
-        flex-direction: row; /* 가로 정렬 */
-        flex-wrap: wrap; /* 줄 바꿈 허용 */
-        margin-left: 0; /* 여백 제거 */
+      flex-direction: row; /* 가로 정렬 */
+      flex-wrap: nowrap; /* 줄 바꿈 허용 */
+      margin-left: 0; /* 여백 제거 */
     }
-
+  
     .toolbar a {
-        margin-bottom: 0; /* 세로 정렬 시 여백 제거 */
-        margin-right: 10px; /* 오른쪽 여백 추가 */
+      margin-bottom: 0; /* 세로 정렬 시 여백 제거 */
+      margin-right: 10px; /* 오른쪽 여백 추가 */
     }
-
-    .header-logo {
-        margin-bottom: 10px; /* 로고와 툴바 간 여백 추가 */
+  
+    .logo {
+      transform: translateY(8px);
+      margin-bottom: 10px; /* 로고와 툴바 간 여백 추가 */
     }
-
+  
     #recommendation {
-        width: 90%; /* 모바일에서 너비 조정 */
+      width: 90%; /* 모바일에서 너비 조정 */
     }
-}
+  }
+  
+  .toolbar {
+    display: flex; /* 툴바를 가로로 배치 */
+    margin-left: auto; /* 왼쪽 여백 자동으로 설정하여 오른쪽으로 이동 */
+  }
+  
+  .toolbar a {
+    color: white; /* 링크 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin-right: 20px; /* 링크 간 여백 */
+    padding: 10px; /* 클릭 영역 확장 */
+  }
+  
+  .toolbar a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+  }
+  
