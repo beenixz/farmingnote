@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,37 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>파밍노트 | FARMING NOTE</title>
     <link rel="stylesheet" href="1styles.css">
+    <link href="farminglogo.png" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="index.html" class="logo">FARMING NOTE</a>
-        <img src="farminglogo.png" alt="FARMING NOTE 로고" class="header-logo">
+        <img src="farminglogo.png" alt="FARMING NOTE 로고" class="header_logo">
         <nav class="toolbar"></nav>
     </header>
     <main>
-     <section id="recommendation">
-    <h2>농산물 추천</h2>
-    <form id="form">
-        <label for="location">도/시:</label>
-        <select id="location" required>
-            <option value="">- 선택하세요 -</option>
-        </select>
+        <div class="main-container">
+            <section id="recommendation">
+                <h2>농산물 추천</h2>
+                <form id="form">
+                    <label for="location">지역:</label>
+                    <select id="location" required>
+                        <option value="">- 선택하세요 -</option>
+                    </select>
 
-        <label for="temperature">온도 (°C):</label>
-        <input type="number" id="temperature" required>
+                    <label for="month">월:</label>
+                    <select id="month" required>
+                        <option value="">- 선택하세요 -</option>
+                        <option value="1">1월</option>
+                        <option value="2">2월</option>
+                        <option value="3">3월</option>
+                        <option value="4">4월</option>
+                        <option value="5">5월</option>
+                        <option value="6">6월</option>
+                        <option value="7">7월</option>
+                        <option value="8">8월</option>
+                        <option value="9">9월</option>
+                        <option value="10">10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                    </select>
 
-        <button type="submit">추천</button>
-    </form>
-    <div id="result" class="result-container"></div>
-</section>
-
+                    <button type="submit">추천</button>
+                </form>
+                <div id="result" class="result-container"></div>
+            </section>
+            <section id="detail" class="detail-container"></section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 천안월봉고 인포테라피</p>
         <nav>
-            <a href="gayin.html">개인정보 처리방침</a> | 
-            <a href="eyong.html">이용약관</a> |
-            <a href="https://forms.gle/ZCUqSUb46iQmCV4p9">문의하기</a>
+            <a href="https://forms.gle/ZCUqSUb46iQmCV4p9">| 문의하기 |</a>
         </nav>
     </footer>
     <script src="1script.js"></script>
