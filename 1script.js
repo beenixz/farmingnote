@@ -1249,6 +1249,75 @@ const produceDetails = {
                 genus: "브라시카속"
             }
         },    
+    "멜론": {
+    "name": "멜론", 
+    "scientificName": "Cucumis melo", 
+    "image": "멜론.jpeg",
+    "sowingTime": "4월 - 6월", 
+    "harvestTime": "7월 - 9월", 
+    "temperature": "20-30", 
+    "features": "달콤하고 수분이 많아 여름철에 인기가 높습니다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "박달나무목",
+        "family": "박과",
+        "genus": "무속"
+    }
+},
+"팥": {
+    "name": "팥", 
+    "scientificName": "Vigna angularis", 
+    "image": "팥.jpeg",
+    "sowingTime": "5월 - 6월", 
+    "harvestTime": "9월 - 10월", 
+    "temperature": "20-25", 
+    "features": "단백질이 풍부하고 소화에 좋으며, 다양한 요리에 사용됩니다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "콩과",
+        "family": "콩과",
+        "genus": "완두속"
+    }
+},
+"호두": {
+    "name": "호두", 
+    "scientificName": "Juglans regia", 
+    "image": "호두.jpeg",
+    "sowingTime": "3월 - 4월", 
+    "harvestTime": "9월 - 10월", 
+    "temperature": "15-20", 
+    "features": "오메가-3 지방산이 풍부하고, 뇌 건강에 좋습니다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "호두목",
+        "family": "호두과",
+        "genus": "Juglans"
+    }
+},
+"가지": {
+    "name": "가지", 
+    "scientificName": "Solanum melongena", 
+    "image": "가지.jpeg",
+    "sowingTime": "4월 - 6월", 
+    "harvestTime": "7월 - 10월", 
+    "temperature": "20-30", 
+    "features": "비타민과 미네랄이 풍부하며, 다양한 요리에 사용됩니다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "가지목",
+        "family": "가지과",
+        "genus": "Solanum"
+    }
+}
+
 };
 
 // DOM 요소 정의
