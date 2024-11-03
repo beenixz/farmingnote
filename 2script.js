@@ -1003,11 +1003,19 @@ const produceDetails = {
         "호박": {
             name: "호박", 
             scientificName: "Cucurbita pepo", 
-            image: "호박.jpg",
+                order: "미나리목",
+                family: "미나리과",
+                genus: "당근속"
+            }
+        },
+        "호박": {
+            name: "호박", 
+            scientificName: "Cucurbita pepo", 
+            image: "호박.jpeg",
             sowingTime: "5월", 
             harvestTime: "9월 - 10월", 
             temperature: "20-30", 
-            features: "달콤한 맛과 다양한 요리에 사용됩니다.",
+            features: "속은 결이 거칠고 끈끈한 섬유질로 이루어져 있으며 열매 가운데에 씨가 들어 있다. 열매의 무게는 대개 7-14kg 정도이지만 90kg이 넘게 나가는 것도 있다. 열매는 대개 오렌지색을 띠며, 노란색·녹색·흰색 등 다른 색깔을 띠는 것도 많다. 익으면 바깥면이 주로 짙은 황갈색을 띤다.",
             classification: {
                 kingdom: "식물계",
                 phylum: "속씨식물문",
@@ -1020,11 +1028,11 @@ const produceDetails = {
         "셀러리": {
             name: "셀러리", 
             scientificName: "Apium graveolens", 
-            image: "셀러리.jpg",
+            image: "셀러리.jpeg",
             sowingTime: "3월 - 4월", 
             harvestTime: "6월 - 9월", 
             temperature: "10-20", 
-            features: "아삭한 식감과 건강에 좋은 성분이 많습니다.",
+            features: "초여름부터 가을까지가 맛있고 잎에 광택이 있고 줄기는 두껍고 심줄이 또렷이 박혀 있는 것이 좋다. 특유의 향기와 아삭아삭한 씹는 맛을 살려야 하는 채소로 반드시 심줄이 단단한 부분은 제거하고 요리를 하여야 한다.",
             classification: {
                 kingdom: "식물계",
                 phylum: "속씨식물문",
@@ -1037,11 +1045,11 @@ const produceDetails = {
         "브로콜리": {
             name: "브로콜리", 
             scientificName: "Brassica oleracea var. italica", 
-            image: "브로콜리.jpg",
+            image: "브로콜리.jpeg",
             sowingTime: "3월 - 5월", 
             harvestTime: "6월 - 10월", 
             temperature: "15-20", 
-            features: "비타민 C가 풍부하고 건강에 좋습니다.",
+            features: "브로콜리는 교목으로서 많이 쓰이며 향기가 많이 나고 푸른 빛이 아름답다. 나무처럼 생겨나서 두껍고 질긴 가운데 부분을 주로 하고 피어나는 모양이다. 꽃 부분을 먹는 배추 중 한 종류가 이탈리아에서 품종개량되어 지금의 모습이 되었다. 콜리플라워는 브로콜리의 개량종이다.",
             classification: {
                 kingdom: "식물계",
                 phylum: "속씨식물문",
@@ -1051,7 +1059,76 @@ const produceDetails = {
                 genus: "브라시카속"
             }
         },    
-}}
+    "멜론": {
+    "name": "멜론", 
+    "scientificName": "Cucumis melo", 
+    "image": "멜론.jpeg",
+    "sowingTime": "4월 - 6월", 
+    "harvestTime": "7월 - 9월", 
+    "temperature": "20-30", 
+    "features": "과육은 녹색이거나 노란빛이 도는 분홍색으로, 맛이 달콤하고 사향 냄새를 풍긴다. 유럽에서 많이 재배하는 캔털루프멜론은 껍질이 사마귀혹처럼 울퉁불퉁하고 녹색을 띤다. 과육은 노란빛을 띤 오렌지색으로 달다. 감로멜론은 초록빛이 도는 흰색을 띠는 매끈한 껍질과 달콤한 녹색 과육이 특징이다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "박달나무목",
+        "family": "박과",
+        "genus": "무속"
+    }
+},
+"팥": {
+    "name": "팥", 
+    "scientificName": "Vigna angularis", 
+    "image": "팥.jpeg",
+    "sowingTime": "5월 - 6월", 
+    "harvestTime": "9월 - 10월", 
+    "temperature": "20-25", 
+    "features": "팥에는 비타민 중에서 B군이 풍부하기 때문에 탄수화물의 소화흡수 및 피로감 개선, 기억력 감퇴 예방에 도움을 주고, 사포닌과 콜린 함량이 많아 혈중 중성지방 조절에 도움을 준다. 팥은 몸 안의 붓기와 노폐물 제거에 효과적인 곡물로 체중관리에 도움을 주는 것으로 알려져 있다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "콩과",
+        "family": "콩과",
+        "genus": "완두속"
+    }
+},
+"호두": {
+    "name": "호두", 
+    "scientificName": "Juglans regia", 
+    "image": "호두.jpeg",
+    "sowingTime": "3월 - 4월", 
+    "harvestTime": "9월 - 10월", 
+    "temperature": "15-20", 
+    "features": "특징 및 의의 호두는 양질의 단백질과 소화 흡수가 잘되는 지방 성분을 다량 함유하고 있는 등 영양이 우수한 알칼리성 식품이다. 호두에 함유된 지방은 다가불포화지방산, 리놀레산, 리놀렌산 등으로 이루어져 있어 성인병 예방에 도움을 줄 뿐만 아니라 피부도 윤택하게 해 주는 효능이 있다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "호두목",
+        "family": "호두과",
+        "genus": "Juglans"
+    }
+},
+"가지": {
+    "name": "가지", 
+    "scientificName": "Solanum melongena", 
+    "image": "가지.jpeg",
+    "sowingTime": "4월 - 6월", 
+    "harvestTime": "7월 - 10월", 
+    "temperature": "20-30", 
+    "features": "대개 '가지'라 하면 가지의 열매를 지칭하며, 검은 자줏빛의 두껍고 질긴 외피와 스펀지 같은 촉감의 연한 노랑/연두 혹은 흰 과육으로 이루어졌다. 신선한 가지는 열매 꼭지 부분에 가시가 있어 취급에 주의를 요하기도 한다. 검은 빛깔의 껍질에는 안토시아닌이 많이 들어있다.",
+    "classification": {
+        "kingdom": "식물계",
+        "phylum": "속씨식물문",
+        "class": "쌍떡잎식물강",
+        "order": "가지목",
+        "family": "가지과",
+        "genus": "Solanum"
+    }
+}
+
+};
 
 // 검색 버튼 클릭 시 검색 기능
 document.getElementById('search-btn').addEventListener('click', function() {
