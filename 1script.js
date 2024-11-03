@@ -236,7 +236,15 @@ const produceDetails = {
         sowingTime: "3월 - 4월", 
         harvestTime: "6월 - 7월", 
         temperature: "15-20", 
-        features: "아삭하고 시원한 맛이 특징입니다."
+        features: "아삭하고 시원한 맛이 특징입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "십자화목",
+            family: "십자화과",
+            genus: "무속"
+        }
     },
     "현미": {
         name: "현미", 
@@ -245,7 +253,15 @@ const produceDetails = {
         sowingTime: "5월", 
         harvestTime: "10월", 
         temperature: "20-30", 
-        features: "영양가가 높은 곡물입니다."
+        features: "영양가가 높은 곡물입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "단자엽식물강",
+            order: "벼목",
+            family: "벼과",
+            genus: "벼속"
+        }
     },
     "도라지": {
         name: "도라지", 
@@ -254,7 +270,15 @@ const produceDetails = {
         sowingTime: "4월 - 5월", 
         harvestTime: "9월", 
         temperature: "10-25", 
-        features: "영양가가 풍부하고 약용 효과가 있습니다."
+        features: "영양가가 풍부하고 약용 효과가 있습니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "초롱꽃목",
+            family: "초롱꽃과",
+            genus: "도라지속"
+        }
     },
     "돼지감자": {
         name: "돼지감자", 
@@ -263,7 +287,15 @@ const produceDetails = {
         sowingTime: "4월", 
         harvestTime: "10월", 
         temperature: "15-25", 
-        features: "맛이 좋고 소화에 도움을 줍니다."
+        features: "맛이 좋고 소화에 도움을 줍니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "국화목",
+            family: "국화과",
+            genus: "해바라기속"
+        }
     },
     "고구마": {
         name: "고구마", 
@@ -272,7 +304,15 @@ const produceDetails = {
         sowingTime: "5월", 
         harvestTime: "10월", 
         temperature: "20-30", 
-        features: "달콤하고 영양가가 높습니다."
+        features: "달콤하고 영양가가 높습니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "메꽃목",
+            family: "메꽃과",
+            genus: "메꽃속"
+        }
     },
     "양배추": {
         name: "양배추", 
@@ -281,7 +321,15 @@ const produceDetails = {
         sowingTime: "3월 - 4월", 
         harvestTime: "6월 - 7월", 
         temperature: "15-20", 
-        features: "비타민 C가 풍부합니다."
+        features: "비타민 C가 풍부합니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "십자화목",
+            family: "십자화과",
+            genus: "브라시카속"
+        }
     },
     "상추": {
         name: "상추", 
@@ -290,7 +338,15 @@ const produceDetails = {
         sowingTime: "3월 - 5월", 
         harvestTime: "5월 - 6월", 
         temperature: "10-20", 
-        features: "신선한 맛과 아삭한 식감이 특징입니다."
+        features: "신선한 맛과 아삭한 식감이 특징입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "국화목",
+            family: "국화과",
+            genus: "상추속"
+        }
     },
     "방울토마토": {
         name: "방울토마토", 
@@ -299,7 +355,15 @@ const produceDetails = {
         sowingTime: "4월", 
         harvestTime: "7월 - 9월", 
         temperature: "20-30", 
-        features: "달콤하고 즙이 많습니다."
+        features: "달콤하고 즙이 많습니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "가지목",
+            family: "가지과",
+            genus: "토마토속"
+        }
     },
     "토마토": {
         name: "토마토", 
@@ -308,7 +372,15 @@ const produceDetails = {
         sowingTime: "4월", 
         harvestTime: "7월 - 9월", 
         temperature: "20-30", 
-        features: "다양한 요리에 사용됩니다."
+        features: "다양한 요리에 사용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "가지목",
+            family: "가지과",
+            genus: "토마토속"
+        }
     },
     "당근": {
         name: "당근", 
@@ -317,7 +389,15 @@ const produceDetails = {
         sowingTime: "3월 - 4월", 
         harvestTime: "6월 - 10월", 
         temperature: "15-20", 
-        features: "비타민 A가 풍부하고 아삭한 식감입니다."
+        features: "비타민 A가 풍부하고 아삭한 식감입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "미나리목",
+            family: "미나리과",
+            genus: "당근속"
+        }
     },
     "배추": {
         name: "배추", 
@@ -326,7 +406,15 @@ const produceDetails = {
         sowingTime: "4월 - 5월", 
         harvestTime: "10월 - 11월", 
         temperature: "15-20", 
-        features: "김치의 주재료로 사용됩니다."
+        features: "김치의 주재료로 사용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "십자화목",
+            family: "십자화과",
+            genus: "브라시카속"
+        }
     },
     "양송이버섯": {
         name: "양송이버섯", 
@@ -335,7 +423,15 @@ const produceDetails = {
         sowingTime: "상시", 
         harvestTime: "상시", 
         temperature: "15-20", 
-        features: "다양한 요리에 활용됩니다."
+        features: "다양한 요리에 활용됩니다.",
+        classification: {
+            kingdom: "균계",
+            phylum: "자낭균문",
+            class: "자낭균강",
+            order: "자낭균목",
+            family: "자낭균과",
+            genus: "아가리쿠스속"
+        }
     },
     "딸기": {
         name: "딸기", 
@@ -344,7 +440,15 @@ const produceDetails = {
         sowingTime: "3월 - 4월", 
         harvestTime: "5월 - 6월", 
         temperature: "15-25", 
-        features: "달콤하고 상큼한 과일입니다."
+        features: "달콤하고 상큼한 과일입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "장미목",
+            family: "장미과",
+            genus: "딸기속"
+        }
     },
     "단감": {
         name: "단감", 
@@ -353,7 +457,15 @@ const produceDetails = {
         sowingTime: "4월", 
         harvestTime: "10월", 
         temperature: "15-25", 
-        features: "달콤하고 부드러운 과일입니다."
+        features: "달콤하고 부드러운 과일입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "감목",
+            family: "감과",
+            genus: "감속"
+        }
     },
     "부추": {
         name: "부추", 
@@ -362,7 +474,15 @@ const produceDetails = {
         sowingTime: "3월 - 5월", 
         harvestTime: "상시", 
         temperature: "10-20", 
-        features: "향이 강하고 다양한 요리에 사용됩니다."
+        features: "향이 강하고 다양한 요리에 사용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "피자식물문",
+            class: "외떡잎식물강",
+            order: "백합목",
+            family: "붓꽃과",
+            genus: "양파속"
+        }
     },
     "양송이": {
         name: "양송이", 
@@ -371,7 +491,15 @@ const produceDetails = {
         sowingTime: "상시", 
         harvestTime: "상시", 
         temperature: "15-20", 
-        features: "부드러운 식감과 고소한 맛이 특징입니다."
+        features: "부드러운 식감과 고소한 맛이 특징입니다.",
+        classification: {
+            kingdom: "균계",
+            phylum: "자낭균문",
+            class: "자낭균강",
+            order: "자낭균목",
+            family: "자낭균과",
+            genus: "아가리쿠스속"
+        }
     },
     "배도라지": {
         name: "배도라지", 
@@ -380,7 +508,15 @@ const produceDetails = {
         sowingTime: "4월", 
         harvestTime: "9월", 
         temperature: "15-25", 
-        features: "아삭한 식감과 독특한 맛이 특징입니다."
+        features: "아삭한 식감과 독특한 맛이 특징입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "십자화목",
+            family: "십자화과",
+            genus: "무속"
+        }
     },
     "고추": {
         name: "고추", 
@@ -389,170 +525,312 @@ const produceDetails = {
         sowingTime: "4월", 
         harvestTime: "8월 - 10월", 
         temperature: "20-30", 
-        features: "매운 맛으로 다양한 요리에 사용됩니다."
+        features: "매운 맛으로 다양한 요리에 사용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "가지목",
+            family: "가지과",
+            genus: "고추속"
+        }
     },
     "수박": {
         name: "수박", 
         scientificName: "Citrullus lanatus", 
-        image: "path/to/watermelon.jpg",
+        image: "수박.jpeg",
         sowingTime: "5월", 
         harvestTime: "7월 - 8월", 
         temperature: "25-30", 
-        features: "시원하고 달콤한 여름 과일입니다."
+        features: "시원하고 달콤한 여름 과일입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "박과목",
+            family: "박과",
+            genus: "수박속"
+        }
     },
     "옥수수": {
         name: "옥수수", 
         scientificName: "Zea mays", 
-        image: "path/to/corn.jpg",
+        image: "찰옥수수.jpeg",
         sowingTime: "4월", 
         harvestTime: "8월", 
         temperature: "20-30", 
-        features: "단맛이 강한 여름 작물입니다."
+        features: "단맛이 강한 여름 작물입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "단자엽식물강",
+            order: "벼목",
+            family: "벼과",
+            genus: "옥수수속"
+        }
     },
     "귤": {
         name: "귤", 
         scientificName: "Citrus reticulata", 
-        image: "path/to/tangerine.jpg",
+        image: "귤.jpg",
         sowingTime: "봄", 
         harvestTime: "11월 - 12월", 
         temperature: "15-25", 
-        features: "상큼한 맛이 특징인 과일입니다."
+        features: "상큼한 맛이 특징인 과일입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "무환자목",
+            family: "운향과",
+            genus: "귤속"
+        }
     },
     "감": {
         name: "감", 
         scientificName: "Danjong persimmon", 
-        image: "path/to/persimmon.jpg",
+        image: "단감.jpg",
         sowingTime: "4월", 
         harvestTime: "10월", 
         temperature: "15-25", 
-        features: "달콤하고 부드러운 과일입니다."
+        features: "달콤하고 부드러운 과일입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "감목",
+            family: "감과",
+            genus: "감속"
+        }
     },
     "케일": {
         name: "케일", 
         scientificName: "Brassica oleracea var. sabellica", 
-        image: "path/to/kale.jpg",
+        image: "케일.jpeg",
         sowingTime: "3월 - 5월", 
         harvestTime: "6월 - 11월", 
         temperature: "15-25", 
-        features: "영양가가 높고 건강식으로 인기가 많습니다."
+        features: "영양가가 높고 건강식으로 인기가 많습니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "십자화목",
+            family: "십자화과",
+            genus: "브라시카속"
+        }
     },
     "콜라비": {
         name: "콜라비", 
         scientificName: "Brassica oleracea var. gongylodes", 
-        image: "path/to/kohlrabi.jpg",
+        image: "콜라비.jpg",
         sowingTime: "3월 - 4월", 
         harvestTime: "6월 - 9월", 
         temperature: "15-20", 
-        features: "아삭한 식감과 단맛이 특징입니다."
+        features: "아삭한 식감과 단맛이 특징입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "십자화목",
+            family: "십자화과",
+            genus: "브라시카속"
+        }
     },
     "아스파라거스": {
         name: "아스파라거스", 
         scientificName: "Asparagus officinalis", 
-        image: "path/to/asparagus.jpg",
+        image: "아스파라거스.jpeg",
         sowingTime: "3월", 
         harvestTime: "5월 - 6월", 
         temperature: "15-25", 
-        features: "영양가가 높고 다양한 요리에 활용됩니다."
+        features: "영양가가 높고 다양한 요리에 활용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "외떡잎식물강",
+            order: "아스파라거스목",
+            family: "아스파라거스과",
+            genus: "아스파라거스속"
+        }
     },
-    "셀러리": {
-        name: "셀러리", 
+    "샐러리": {
+        name: "샐러리", 
         scientificName: "Apium graveolens", 
-        image: "path/to/celery.jpg",
+        image: "샐러리.jpeg",
         sowingTime: "3월 - 4월", 
         harvestTime: "6월 - 9월", 
         temperature: "10-20", 
-        features: "아삭한 식감과 건강에 좋은 성분이 많습니다."
+        features: "아삭한 식감과 건강에 좋은 성분이 많습니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "미나리목",
+            family: "미나리과",
+            genus: "미나리속"
+        }
     },
     "비트": {
         name: "비트", 
         scientificName: "Beta vulgaris", 
-        image: "path/to/beet.jpg",
+        image: "비트.jpeg",
         sowingTime: "4월", 
         harvestTime: "8월 - 10월", 
         temperature: "15-25", 
-        features: "달콤하고 색이 선명한 뿌리채소입니다."
+        features: "달콤하고 색이 선명한 뿌리채소입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "자근목",
+            family: "자근과",
+            genus: "비트속"
+        }
     },
     "대파": {
         name: "대파", 
         scientificName: "Allium fistulosum", 
-        image: "path/to/green_onion.jpg",
+        image: "대파.jpeg",
         sowingTime: "3월 - 4월", 
         harvestTime: "6월 - 10월", 
         temperature: "10-20", 
-        features: "향이 강하고 다양한 요리에 사용됩니다."
+        features: "향이 강하고 다양한 요리에 사용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "피자식물문",
+            class: "외떡잎식물강",
+            order: "백합목",
+            family: "백합과",
+            genus: "양파속"
+        }
     },
     "오이": {
         name: "오이", 
         scientificName: "Cucumis sativus", 
-        image: "path/to/cucumber.jpg",
+        image: "오이.jpeg",
         sowingTime: "5월", 
         harvestTime: "7월 - 9월", 
         temperature: "20-30", 
-        features: "아삭하고 시원한 여름 채소입니다."
+        features: "아삭하고 시원한 여름 채소입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "박과목",
+            family: "박과",
+            genus: "오이속"
+        }
     },
     "호박": {
         name: "호박", 
         scientificName: "Cucurbita pepo", 
-        image: "path/to/pumpkin.jpg",
+        image: "호박.jpeg",
         sowingTime: "5월", 
         harvestTime: "9월 - 10월", 
         temperature: "20-30", 
-        features: "달콤한 맛과 다양한 요리에 사용됩니다."
+        features: "달콤한 맛과 다양한 요리에 사용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "박과목",
+            family: "박과",
+            genus: "호박속"
+        }
     },
     "파프리카": {
         name: "파프리카", 
         scientificName: "Capsicum annuum", 
-        image: "path/to/paprika.jpg",
+        image: "파프리카.jpeg",
         sowingTime: "4월", 
         harvestTime: "7월 - 9월", 
         temperature: "20-30", 
-        features: "비타민 C가 풍부하고 색상이 다양합니다."
+        features: "비타민 C가 풍부하고 색상이 다양합니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "가지목",
+            family: "가지과",
+            genus: "고추속"
+        }
     },
     "토란": {
         name: "토란", 
         scientificName: "Colocasia esculenta", 
-        image: "path/to/taro.jpg",
+        image: "토란.jpg",
         sowingTime: "4월", 
         harvestTime: "9월 - 10월", 
         temperature: "20-30", 
-        features: "부드러운 식감과 독특한 맛이 특징입니다."
+        features: "부드러운 식감과 독특한 맛이 특징입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "외떡잎식물강",
+            order: "천남성과",
+            family: "천남성과",
+            genus: "토란속"
+        }
     },
     "참외": {
         name: "참외", 
         scientificName: "Cucumis melo", 
-        image: "path/to/chamoe.jpg",
+        image: "참외.jpeg",
         sowingTime: "5월", 
         harvestTime: "7월 - 8월", 
         temperature: "20-30", 
-        features: "달콤하고 시원한 여름 과일입니다."
+        features: "달콤하고 시원한 여름 과일입니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "박과목",
+            family: "박과",
+            genus: "오이속"
+        }
     },
     "미나리": {
         name: "미나리", 
         scientificName: "Oenanthe javanica", 
-        image: "path/to/minari.jpg",
+        image: "미나리.jpeg",
         sowingTime: "봄", 
         harvestTime: "여름", 
         temperature: "15-25", 
-        features: "향이 좋고 다양한 요리에 활용됩니다."
+        features: "향이 좋고 다양한 요리에 활용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "미나리목",
+            family: "미나리과",
+            genus: "미나리속"
+        }
     },
     "콜라드": {
         name: "콜라드", 
         scientificName: "Brassica oleracea L.", 
-        image: "path/to/cola_de.jpg",
+        image: "콜라드.jpeg",
         sowingTime: "3월 - 5월", 
         harvestTime: "6월 - 11월", 
         temperature: "15-25", 
-        features: "영양가가 높고 다양한 요리에 사용됩니다."
+        features: "영양가가 높고 다양한 요리에 사용됩니다.",
+        classification: {
+            kingdom: "식물계",
+            phylum: "속씨식물문",
+            class: "쌍떡잎식물강",
+            order: "십자화목",
+            family: "십자화과",
+            genus: "브라시카속"
+        }
     }
 };
-
-       
-
 
 // DOM 요소 정의
 const form = document.getElementById('form');
 const resultDiv = document.getElementById('result');
 const detailDiv = document.getElementById('detail');
+const xboxx = document.getElementById('boxx')
 
 // 추천 버튼 클릭 시 농산물 추천
 form.addEventListener('submit', function(event) {
@@ -587,14 +865,29 @@ resultDiv.addEventListener('click', function(event) {
 
         if (detail) {
             detailDiv.innerHTML = `
-                <img src="${detail.image}" alt="${detail.name}" style="width: 100%; height: auto;">
-                <h4>${detail.name} (${detail.scientificName})</h4>
-                <p><strong>파종 시기:</strong> ${detail.sowingTime}</p>
-                <p><strong>수확 시기:</strong> ${detail.harvestTime}</p>
-                <p><strong>온도:</strong> ${detail.temperature}°C</p>
-                <p><strong>세부 특징:</strong> ${detail.features}</p>
+                <img src="${detail.image}" alt="${detail.name}" style="width: 100%; height: auto; border: 2px solid #ccc; border-radius: 5px;">
+                <h4 style="text-align:">${detail.name} (${detail.scientificName})</h4>
+                <p style="text-align: left;"><strong>파종 시기:</strong> ${detail.sowingTime}</p>
+                <p style="text-align: left;"><strong>수확 시기:</strong> ${detail.harvestTime}</p>
+                <p style="text-align: left;"><strong>온도:</strong> ${detail.temperature}°C</p>
+                <p style="text-align: left;"><strong>특징:</strong> ${detail.features}</p>
+                <p style="text-align: left;"><strong>계:</strong> ${detail.classification.kingdom}</p>
+                <p style="text-align: left;"><strong>목:</strong> ${detail.classification.order}</p>
+                <p style="text-align: left;"><strong>과:</strong> ${detail.classification.family}</p>
+                <p style="text-align: left;"><strong>속:</strong> ${detail.classification.genus}</p>
             `;
             detailDiv.style.display = 'block'; // 세부정보 표시
+            xboxx.style.display = 'block'
         }
     }
 });
+
+window.onload = function () {
+    var el = document.getElementById("boxx");
+    el.onclick = xbox;
+}
+
+function xbox() {
+    document.getElementById("boxx").style.display="none";
+    document.getElementById("detail").style.display="none";
+}
