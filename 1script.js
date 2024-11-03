@@ -334,7 +334,7 @@ const produceDetails = {
     "상추": {
         name: "상추", 
         scientificName: "Lactuca sativa", 
-        image: "상추.jpeg",
+        image: "상추.jpg",
         sowingTime: "3월 - 5월", 
         harvestTime: "5월 - 6월", 
         temperature: "10-20", 
