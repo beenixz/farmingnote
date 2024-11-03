@@ -612,7 +612,7 @@ const produceDetails = {
     "포도": {
         name: "포도", 
             scientificName: "Vitis vinifera", 
-            image: "포도.jpeg",
+            image: "포도.jpg",
             sowingTime: "4월", 
             harvestTime: "8월 - 10월", 
             temperature: "20-30", 
@@ -629,7 +629,7 @@ const produceDetails = {
         "사과": {
             name: "사과", 
             scientificName: "Malus domestica", 
-            image: "사과.jpeg",
+            image: "사과.jpg",
             sowingTime: "봄", 
             harvestTime: "9월 - 11월", 
             temperature: "15-25", 
@@ -646,7 +646,7 @@ const produceDetails = {
         "모과": {
             name: "모과", 
             scientificName: "Cydonia oblonga", 
-            image: "모과.jpeg",
+            image: "모과.jpg",
             sowingTime: "봄", 
             harvestTime: "10월", 
             temperature: "15-25", 
@@ -663,7 +663,7 @@ const produceDetails = {
         "바나나": {
             name: "바나나", 
             scientificName: "Musa acuminata", 
-            image: "바나나.jpeg",
+            image: "바나나.jpg",
             sowingTime: "상시", 
             harvestTime: "상시", 
             temperature: "25-30", 
@@ -680,7 +680,7 @@ const produceDetails = {
         "배": {
             name: "배", 
             scientificName: "Pyrus pyrifolia", 
-            image: "배.jpeg",
+            image: "배.jpg",
             sowingTime: "봄", 
             harvestTime: "9월 - 10월", 
             temperature: "15-25", 
@@ -697,7 +697,7 @@ const produceDetails = {
         "귤": {
             name: "귤", 
             scientificName: "Citrus reticulata", 
-            image: "귤.jpeg",
+            image: "귤.jpg",
             sowingTime: "봄", 
             harvestTime: "11월 - 12월", 
             temperature: "15-25", 
@@ -714,7 +714,7 @@ const produceDetails = {
         "복숭아": {
             name: "복숭아", 
             scientificName: "Prunus persica", 
-            image: "복숭아.jpeg",
+            image: "복숭아.jpg",
             sowingTime: "봄", 
             harvestTime: "7월 - 9월", 
             temperature: "15-25", 
@@ -731,7 +731,7 @@ const produceDetails = {
         "체리": {
             name: "체리", 
             scientificName: "Prunus avium", 
-            image: "체리.jpeg",
+            image: "체리.jpg",
             sowingTime: "봄", 
             harvestTime: "6월 - 7월", 
             temperature: "15-25", 
@@ -748,7 +748,7 @@ const produceDetails = {
         "파인애플": {
             name: "파인애플", 
             scientificName: "Ananas comosus", 
-            image: "파인애플.jpeg",
+            image: "파인애플.jpg",
             sowingTime: "상시", 
             harvestTime: "상시", 
             temperature: "25-30", 
@@ -765,7 +765,7 @@ const produceDetails = {
         "감": {
             name: "감", 
             scientificName: "Danjong persimmon", 
-            image: "감.jpeg",
+            image: "감.jpg",
             sowingTime: "4월", 
             harvestTime: "10월", 
             temperature: "15-25", 
@@ -782,7 +782,7 @@ const produceDetails = {
         "망고": {
             name: "망고", 
             scientificName: "Mangifera indica", 
-            image: "망고.jpeg",
+            image: "망고.jpg",
             sowingTime: "봄", 
             harvestTime: "6월 - 9월", 
             temperature: "25-30", 
@@ -799,7 +799,7 @@ const produceDetails = {
         "레몬": {
             name: "레몬", 
             scientificName: "Citrus limon", 
-            image: "레몬.jpeg",
+            image: "레몬.jpg",
             sowingTime: "봄", 
             harvestTime: "11월 - 2월", 
             temperature: "15-25", 
@@ -816,7 +816,7 @@ const produceDetails = {
         "파프리카": {
             name: "파프리카", 
             scientificName: "Capsicum annuum", 
-            image: "파프리카.jpeg",
+            image: "파프리카.jpg",
             sowingTime: "4월", 
             harvestTime: "7월 - 9월", 
             temperature: "20-30", 
@@ -833,7 +833,7 @@ const produceDetails = {
         "아보카도": {
             name: "아보카도", 
             scientificName: "Persea americana", 
-            image: "아보카도.jpeg",
+            image: "아보카도.jpg",
             sowingTime: "봄", 
             harvestTime: "가을", 
             temperature: "20-30", 
@@ -850,7 +850,7 @@ const produceDetails = {
         "망고스틴": {
             name: "망고스틴", 
             scientificName: "Garcinia mangostana", 
-            image: "망고스틴.jpeg",
+            image: "망고스틴.jpg",
             sowingTime: "봄", 
             harvestTime: "여름", 
             temperature: "25-30", 
@@ -867,7 +867,7 @@ const produceDetails = {
         "천혜향": {
             name: "천혜향", 
             scientificName: "Citrus unshiu", 
-            image: "천혜향.jpeg",
+            image: "천혜향.jpg",
             sowingTime: "봄", 
             harvestTime: "11월 - 12월", 
             temperature: "15-25", 
@@ -884,7 +884,7 @@ const produceDetails = {
         "파파야": {
             name: "파파야", 
             scientificName: "Carica papaya", 
-            image: "파파야.jpeg",
+            image: "파파야.jpg",
             sowingTime: "봄", 
             harvestTime: "여름", 
             temperature: "25-30", 
@@ -901,7 +901,7 @@ const produceDetails = {
         "라임": {
             name: "라임", 
             scientificName: "Citrus aurantiifolia", 
-            image: "라임.jpeg",
+            image: "라임.jpg",
             sowingTime: "봄", 
             harvestTime: "11월 - 2월", 
             temperature: "15-25", 
@@ -918,7 +918,7 @@ const produceDetails = {
         "석류": {
             name: "석류", 
             scientificName: "Punica granatum", 
-            image: "석류.jpeg",
+            image: "석류.jpg",
             sowingTime: "봄", 
             harvestTime: "9월 - 11월", 
             temperature: "15-25", 
@@ -935,7 +935,7 @@ const produceDetails = {
         "자몽": {
             name: "자몽", 
             scientificName: "Citrus × paradisi", 
-            image: "자몽.jpeg",
+            image: "자몽.jpg",
             sowingTime: "봄", 
             harvestTime: "11월 - 3월", 
             temperature: "15-25", 
@@ -952,7 +952,7 @@ const produceDetails = {
         "수박": {
             name: "수박", 
             scientificName: "Citrullus lanatus", 
-            image: "수박.jpeg",
+            image: "수박.jpg",
             sowingTime: "5월", 
             harvestTime: "7월 - 8월", 
             temperature: "25-30", 
@@ -969,7 +969,7 @@ const produceDetails = {
         "참외": {
             name: "참외", 
             scientificName: "Cucumis melo", 
-            image: "참외.jpeg",
+            image: "참외.jpg",
             sowingTime: "5월", 
             harvestTime: "7월 - 8월", 
             temperature: "20-30", 
@@ -986,7 +986,7 @@ const produceDetails = {
         "당근": {
             name: "당근", 
             scientificName: "Daucus carota", 
-            image: "당근.jpeg",
+            image: "당근.jpg",
             sowingTime: "3월 - 4월", 
             harvestTime: "6월 - 10월", 
             temperature: "15-20", 
@@ -1003,7 +1003,7 @@ const produceDetails = {
         "호박": {
             name: "호박", 
             scientificName: "Cucurbita pepo", 
-            image: "호박.jpeg",
+            image: "호박.jpg",
             sowingTime: "5월", 
             harvestTime: "9월 - 10월", 
             temperature: "20-30", 
@@ -1020,7 +1020,7 @@ const produceDetails = {
         "셀러리": {
             name: "셀러리", 
             scientificName: "Apium graveolens", 
-            image: "셀러리.jpeg",
+            image: "셀러리.jpg",
             sowingTime: "3월 - 4월", 
             harvestTime: "6월 - 9월", 
             temperature: "10-20", 
@@ -1037,7 +1037,7 @@ const produceDetails = {
         "브로콜리": {
             name: "브로콜리", 
             scientificName: "Brassica oleracea var. italica", 
-            image: "브로콜리.jpeg",
+            image: "브로콜리.jpg",
             sowingTime: "3월 - 5월", 
             harvestTime: "6월 - 10월", 
             temperature: "15-20", 
