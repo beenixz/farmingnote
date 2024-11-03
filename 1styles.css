@@ -51,8 +51,8 @@
   }
   
   .header_logo {
-    position: fixed;
-    transform: translateX(200px);
+    position: absolute;
+    transform: translateX(190px);
     width: 43px; /* 로고 이미지 크기 */
     height: 43px; /* 로고 이미지 크기 */
     margin-right: 70px; /* 이미지와 툴바 간 여백 */
@@ -108,6 +108,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
   }
   
+  .xbox{
+    display: none;
+  }
+
   label {
     margin-bottom: 5px; /* 레이블과 입력 간 여백 */
   }
@@ -145,33 +149,6 @@
     text-decoration: underline;
   }
   
-  /* 반응형 디자인 */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column; /* 헤더 세로 정렬 */
-      align-items: flex-start; /* 왼쪽 정렬 */
-    }
-  
-    .toolbar {
-      flex-direction: row; /* 가로 정렬 */
-      flex-wrap: nowrap; /* 줄 바꿈 허용 */
-      margin-left: 0; /* 여백 제거 */
-    }
-  
-    .toolbar a {
-      margin-bottom: 0; /* 세로 정렬 시 여백 제거 */
-      margin-right: 10px; /* 오른쪽 여백 추가 */
-    }
-  
-    .logo {
-      transform: translateY(8px);
-      margin-bottom: 10px; /* 로고와 툴바 간 여백 추가 */
-    }
-  
-    #recommendation {
-      width: 90%; /* 모바일에서 너비 조정 */
-    }
-  }
   
   .toolbar {
     display: flex; /* 툴바를 가로로 배치 */
@@ -189,3 +166,51 @@
     text-decoration: underline; /* 호버 시 밑줄 추가 */
   }
   
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column; /* 헤더 세로 정렬 */
+      align-items: flex-start; /* 왼쪽 정렬 */
+    }
+  
+    .toolbar {
+      margin-top: 5px;
+    }
+  
+    .toolbar a {
+      margin-bottom: 0; /* 세로 정렬 시 여백 제거 */
+      margin-right: 10px; /* 오른쪽 여백 추가 */
+    }
+  
+    .logo {
+      transform: translateY(8px);
+      margin-bottom: 10px; /* 로고와 툴바 간 여백 추가 */
+    }
+    
+    .detail-container{
+      position: absolute;
+      transform: translateY(-10px);
+      padding: 15px; /* 패딩 추가 */
+      display: none; /* 기본적으로 숨김 */
+      width: 80%; /* 너비 설정 */
+      margin-left: 0px;
+      opacity: 0.9;
+    }
+    .xbox{
+      display: none;
+      transform: translateX(32px);
+    }
+    #recommendation {
+      width: 90%; /* 모바일에서 너비 조정 */
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 20px; /* 메인과 푸터 간의 간격 추가 */
+    }
+    
+    
+  }
