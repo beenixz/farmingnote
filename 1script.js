@@ -1265,48 +1265,71 @@ const produceDetails = {
                 family: "십자화과",
                 genus: "브라시카속"
             }
-        }, 
-        "근대": {
-            name: "근대", 
-            scientificName: "Beta vulgaris subsp. cicla", 
-            image: "근대.jpeg",
-            sowingTime: "3월 - 5월", 
-            harvestTime: "6월 - 10월", 
-            temperature: "15-20", 
-            features: "비타민 C가 풍부하고 건강에 좋습니다.",
-            classification: {
-                kingdom: "식물계",
-                phylum: "속씨식물문",
-                class: "쌍떡잎식물강",
-                order: "십자화목",
-                family: "십자화과",
-                genus: "브라시카속"
-            }
-        },   
+        },    
 };
 
-// 검색 버튼 클릭 시 검색 기능
-document.getElementById('search-btn').addEventListener('click', function() {
-    const searchTerm = document.getElementById('search').value.trim(); // 입력값 가져오기
-    const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = ""; // 이전 결과 초기화
+// DOM 요소 정의
+const form = document.getElementById('form');
+const resultDiv = document.getElementById('result');
+const detailDiv = document.getElementById('detail');
+const xboxx = document.getElementById('boxx')
 
-    // 농산물 세부 정보에서 검색어에 해당하는 항목 찾기
-    if (produceDetails[searchTerm]) {
-        const detail = produceDetails[searchTerm];
-        resultDiv.innerHTML = `
-            <img src="${detail.image}" alt="${detail.name}" style="width: 100%; height: auto; border: 2px solid #ccc; border-radius: 5px;">
-            <h4>${detail.name} (${detail.scientificName})</h4>
-            <p><strong>파종 시기:</strong> ${detail.sowingTime}</p>
-            <p><strong>수확 시기:</strong> ${detail.harvestTime}</p>
-            <p><strong>온도:</strong> ${detail.temperature}°C</p>
-            <p><strong>특징:</strong> ${detail.features}</p>
-            <p><strong>계:</strong> ${detail.classification.kingdom}</p>
-            <p><strong>목:</strong> ${detail.classification.order}</p>
-            <p><strong>과:</strong> ${detail.classification.family}</p>
-            <p><strong>속:</strong> ${detail.classification.genus}</p>
-        `;
+// 추천 버튼 클릭 시 농산물 추천
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // 기본 폼 제출 방지
+
+    const location = document.getElementById('location').value;
+    const month = document.getElementById('month').value; // 월 선택
+
+    if (location && month) {
+        const recommendations = produceData.recommendations[location][month];
+
+        if (recommendations) {
+            resultDiv.innerHTML = `<h3>${location}에서 추천하는 농산물</h3><ul>${
+                recommendations.map(prod => `<li class="produce-item" style="cursor: pointer;">${prod}</li>`).join('')
+            }</ul>`;
+
+            // 세부정보 초기화
+            detailDiv.style.display = 'none';
+            detailDiv.innerHTML = ''; // 세부정보 초기화
+        } else {
+            resultDiv.innerHTML = `<h3>${location}에서 추천할 농산물이 없습니다.</h3>`;
+        }
     } else {
-        resultDiv.innerHTML = "<p>검색 결과가 없습니다.</p>";
+        resultDiv.innerHTML = `<h3>모든 필드를 입력해 주세요.</h3>`;
     }
 });
+
+resultDiv.addEventListener('click', function(event) {
+    if (event.target.classList.contains('produce-item')) {
+        const produceName = event.target.textContent;
+        const detail = produceDetails[produceName];
+
+        if (detail) {
+            detailDiv.innerHTML = `
+                <img src="${detail.image}" alt="${detail.name}" style="width: 100%; height: auto; border: 2px solid #ccc; border-radius: 5px;">
+                <h4 style="text-align:">${detail.name} (${detail.scientificName})</h4>
+                <p style="text-align: left;"><strong>파종 시기:</strong> ${detail.sowingTime}</p>
+                <p style="text-align: left;"><strong>수확 시기:</strong> ${detail.harvestTime}</p>
+                <p style="text-align: left;"><strong>온도:</strong> ${detail.temperature}°C</p>
+                <p style="text-align: left;"><strong>특징:</strong> ${detail.features}</p>
+                <p style="text-align: left;"><strong>계:</strong> ${detail.classification.kingdom}</p>
+                <p style="text-align: left;"><strong>목:</strong> ${detail.classification.order}</p>
+                <p style="text-align: left;"><strong>과:</strong> ${detail.classification.family}</p>
+                <p style="text-align: left;"><strong>속:</strong> ${detail.classification.genus}</p>
+            `;
+            detailDiv.style.display = 'block'; // 세부정보 표시
+            xboxx.style.display = 'block'
+        }
+    }
+});
+
+window.onload = function () {
+    var el = document.getElementById("boxx");
+    el.onclick = xbox;
+}
+
+function xbox() {
+    document.getElementById("boxx").style.display="none";
+    document.getElementById("detail").style.display="none";
+}
